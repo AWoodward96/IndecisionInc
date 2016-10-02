@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof(Rigidbody2D))]
 public class GrapplingHook : MonoBehaviour {
 
 
@@ -15,6 +16,8 @@ public class GrapplingHook : MonoBehaviour {
 
     Rigidbody2D currentHit;
 
+    Rigidbody2D myRigidbody;
+
 	// Use this for initialization
 	void Start () {
 
@@ -27,6 +30,8 @@ public class GrapplingHook : MonoBehaviour {
         else
             Debug.Log("You have not assigned a hook sprite object to a hook controller");
 
+
+        myRigidbody = GetComponent<Rigidbody2D>();
         ParentJoint = gameObject.GetComponent<DistanceJoint2D>();
 	}
 	
@@ -94,13 +99,27 @@ public class GrapplingHook : MonoBehaviour {
 
         if(Input.GetKey(KeyCode.E) && Hooked) // Go in
         {
-            ParentJoint.distance -= .1f;
+            ParentJoint.distance -= .2f;
         }
 
         if(Input.GetKey(KeyCode.Q) && Hooked)
         {
-            ParentJoint.distance += .1f;
+            ParentJoint.distance += .2f;
         }
     }
+
+
+    //void OnCollisionEnter2D(Collision2D col)
+    //{
+
+    //    // This prevents us from getting stuck while realing up a wall
+    //    if (col.gameObject.tag == "Ground")
+    //    {
+    //        if (Hooked) // If we're hooked on a wall or something, add a normal force
+    //        {
+    //            myRigidbody.AddForce(col.contacts[0].normal);
+    //        }
+    //    }
+    //}
 
 }
