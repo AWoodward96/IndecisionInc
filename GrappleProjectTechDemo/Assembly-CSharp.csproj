@@ -46,9 +46,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraScript.cs" />
+     <Compile Include="Assets\Scripts\Deprecated\Object.cs" />
+     <Compile Include="Assets\Scripts\Deprecated\PlayerObject.cs" />
      <Compile Include="Assets\Scripts\GrapplingHook.cs" />
-     <Compile Include="Assets\Scripts\Object.cs" />
-     <Compile Include="Assets\Scripts\PlayerObject.cs" />
      <Compile Include="Assets\Scripts\PlayerRBController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
