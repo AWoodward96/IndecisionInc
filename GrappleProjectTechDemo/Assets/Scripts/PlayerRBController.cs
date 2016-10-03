@@ -43,7 +43,4 @@ public class PlayerRBController : MonoBehaviour {
             myRigidbody.AddForce(new Vector2(jumpForce, 0));
         }
     }
-
-
-
 }
