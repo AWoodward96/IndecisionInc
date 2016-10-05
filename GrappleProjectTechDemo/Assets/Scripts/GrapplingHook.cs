@@ -66,52 +66,21 @@ public class GrapplingHook : MonoBehaviour
     // Handles mouse clicking for grappling hooks
     void handleInput()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-
-        //    // Raycast check towards the position of the mouse to see if it'll hit anything
-        //    Vector2 DistanceVector = CursorWorldPosition - (Vector2)transform.position;
-        //    Ray2D r = new Ray2D(transform.position, DistanceVector);
-
-        //    RaycastHit2D hit = Physics2D.Raycast(r.origin, r.direction, DistanceVector.magnitude, GroundMask);
-        //    // Cast it
-        //    if (hit)
-        //    {
-        //        // We got a hook
-        //        hitPosition = hit.point; // This wil set the sprite of the hook to the location
-        //        Hooked = true;
-
-        //        // Now hook it (aaaaaa) just hook it (aaaaaaa) just lose it (aaaaaaaa) it's super fucking late (aaaaaaaaa)
-        //        if (!hit.rigidbody)
-        //        {
-        //            Rigidbody2D body = hit.transform.gameObject.AddComponent<Rigidbody2D>();
-        //            body.isKinematic = true;
-        //            body.gravityScale = 0;
-        //        }
-
-        //        currentHit = hit.rigidbody;
-
-        //        // Attach a joint
-        //        Vector2 point = hit.point - new Vector2(hit.transform.position.x, hit.transform.position.y);
-        //        point.x = point.x / hit.transform.localScale.x;
-        //        point.y = point.y / hit.transform.localScale.y;
-
-        //        ParentJoint.distance = hit.distance;
-        //        ParentJoint.connectedBody = hit.rigidbody;
-        //        ParentJoint.connectedAnchor = point;
-        //    }
-        //    else
-        //    {
-        //        Hooked = false;
-        //    }
-        //}
 
         if (Input.GetMouseButtonDown(0))
         {
+            Hooked = false;
             GrappleCall();
         }
 
-            if (Input.GetKey(KeyCode.E) && Hooked) // Go in
+        if(Input.GetMouseButtonDown(1) && GrappleObject)
+        {
+            Hooked = false;
+            GrappleObject.resetHook();    
+        }
+
+
+        if (Input.GetKey(KeyCode.E) && Hooked) // Go in
         {
             ParentJoint.distance -= .2f;
         }
@@ -132,11 +101,13 @@ public class GrapplingHook : MonoBehaviour
         }
     }
 
-    public void GrappleResponse(Vector2 hit)
+    public void GrappleResponse(Rigidbody2D rigidbody, float distance, Vector2 attachedPoint)
     {
-        //Vector2 point = hit.point - new Vector2(hit.transform.position.x, hit.transform.position.y);
-        //point.x = point.x / hit.transform.localScale.x;
-        //point.y = point.y / hit.transform.localScale.y;
+        Debug.Log("Recieved Response");
+        Hooked = true;
+        ParentJoint.distance = distance;
+        ParentJoint.connectedBody = rigidbody;
+        ParentJoint.connectedAnchor = attachedPoint;
     }
 
 }
