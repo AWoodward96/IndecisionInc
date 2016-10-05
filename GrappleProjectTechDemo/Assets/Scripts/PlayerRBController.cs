@@ -8,7 +8,7 @@ public class PlayerRBController : MonoBehaviour
     public float gravity;
     Rigidbody2D myRigidbody;
     public float jumpForce;
-    public GameObject jetpackSlider;
+    public Slider jetpackSlider;
     private int jetpackCooldown;
 
     // Use this for initialization
@@ -31,15 +31,21 @@ public class PlayerRBController : MonoBehaviour
         {
             jetpackCooldown += 1;
         }
-        jetpackSlider.GetComponent<Slider>().value = jetpackCooldown;
-        if (jetpackCooldown < 30)
+
+        if(jetpackSlider)
         {
-            jetpackSlider.GetComponent<Slider>().image.color = Color.red;
+            jetpackSlider.value = jetpackCooldown;
+
+            if (jetpackCooldown < 30)
+            {
+                jetpackSlider.image.color = Color.red;
+            }
+            else
+            {
+                jetpackSlider.image.color = Color.cyan;
+            }
         }
-        else
-        {
-            jetpackSlider.GetComponent<Slider>().image.color = Color.cyan;
-        }
+
     }
 
 
