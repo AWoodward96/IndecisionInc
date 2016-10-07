@@ -15,6 +15,10 @@ public class PlayerRBController : MonoBehaviour
     public GameObject GrapplingHookPrefab;
     GrappleProjectile grapplingHook;
 
+    [HideInInspector]
+    public GameManager GM;
+
+
     // Use this for initialization
     void Start()
     {
@@ -97,5 +101,12 @@ public class PlayerRBController : MonoBehaviour
     }
 
 
+    public void KillPlayer()
+    {
+        grapplingHook.resetHook();
+        if (GM)
+            GM.resetPlayer();
+        gameObject.SetActive(false); // This will shut everything down for a bit
+    }
 
 }
