@@ -13,6 +13,7 @@ public class GrapplingHook : MonoBehaviour
     Vector2 CursorWorldPosition = Vector2.zero;
     public Vector2 hitPosition = Vector2.zero;
     bool Hooked = false;
+    bool SpeedReel = false;
     LayerMask GroundMask;
 
     public GameObject GrapplePrefab;
@@ -80,14 +81,33 @@ public class GrapplingHook : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.E) && Hooked) // Go in
+        if (Input.GetKey(KeyCode.E) && Hooked && !SpeedReel) // Go in
         {
             ParentJoint.distance -= .2f;
         }
 
-        if (Input.GetKey(KeyCode.Q) && Hooked)
+        if (Input.GetKey(KeyCode.Q) && Hooked && !SpeedReel)
         {
             ParentJoint.distance += .2f;
+        }
+
+        if (Input.GetKey(KeyCode.Space) && Hooked && !SpeedReel)
+        {
+            SpeedReel = true;
+        }
+
+        //reel in super fast
+        if (SpeedReel)
+        {
+            if (ParentJoint.distance < 1.8)
+            {
+                ParentJoint.distance -= (ParentJoint.distance - 1);
+                SpeedReel = false;
+            }
+            else
+            {
+                ParentJoint.distance -= .8f;
+            }
         }
     }
 
