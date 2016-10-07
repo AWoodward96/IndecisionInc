@@ -12,6 +12,8 @@ GameObject:
   - 61: {fileID: 6176882}
   - 114: {fileID: 11428162}
   - 120: {fileID: 12019484}
+  - 50: {fileID: 5091760}
+  - 232: {fileID: 23248956}
   m_Layer: 0
   m_Name: GrappleObject
   m_TagString: Untagged
@@ -26,11 +28,27 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.66000009, y: 10.4300003, z: 0}
+  m_LocalPosition: {x: -515.099121, y: -15.8498268, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5091760
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159854}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &6176882
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -60,8 +78,6 @@ MonoBehaviour:
   Move: {x: 0, y: 0, z: 0}
   fired: 0
   Hooked: 0
-  playerObject: {fileID: 0}
-  playerGrappleScript: {fileID: 0}
 --- !u!120 &12019484
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -129,6 +145,20 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 87b0d1badb609644ca0da51f79cdbfba, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!232 &23248956
+DistanceJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159854}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Distance: 1
+  m_MaxDistanceOnly: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

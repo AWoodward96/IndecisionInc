@@ -11,11 +11,26 @@ public class PlayerRBController : MonoBehaviour
     public Slider jetpackSlider;
     private int jetpackCooldown;
 
+    // Just in case we need it
+    public GameObject GrapplingHookPrefab;
+    GrappleProjectile grapplingHook;
+
     // Use this for initialization
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         jetpackCooldown = 100;
+
+        GameObject grapple = GameObject.FindGameObjectWithTag("GrapplingHook");
+        if(grapple)
+        {
+            grapplingHook = grapple.GetComponent<GrappleProjectile>();
+        }
+        else
+        {
+            grapple = (GameObject)Instantiate(GrapplingHookPrefab, transform.position, Quaternion.identity);
+            grapplingHook = grapple.GetComponent<GrappleProjectile>();
+        }
     }
 
     // Update is called once per frame

@@ -35,10 +35,10 @@ public class GrapplingHook : MonoBehaviour
         else
             Debug.Log("You have not assigned a hook sprite object to a hook controller");
 
-        GameObject gObject = (GameObject)Instantiate(GrapplePrefab, transform.position, Quaternion.identity);
-        GrappleObject = gObject.GetComponent<GrappleProjectile>();
-        GrappleObject.playerGrappleScript = this;
-        GrappleObject.playerObject = this.gameObject;
+        //GameObject gObject = (GameObject)Instantiate(GrapplePrefab, transform.position, Quaternion.identity);
+        //GrappleObject = gObject.GetComponent<GrappleProjectile>();
+        //GrappleObject.playerGrappleScript = this;
+        //GrappleObject.playerObject = this.gameObject;
 
         myRigidbody = GetComponent<Rigidbody2D>();
         ParentJoint = gameObject.GetComponent<DistanceJoint2D>();
