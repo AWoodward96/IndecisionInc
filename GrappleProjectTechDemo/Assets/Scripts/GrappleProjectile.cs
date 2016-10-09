@@ -3,20 +3,25 @@ using System.Collections;
 
 
 [RequireComponent (typeof(BoxCollider2D))]
+[RequireComponent (typeof(DistanceJoint2D))]
 public class GrappleProjectile : MonoBehaviour {
 
 
     public int speed;
     public float maxDistance;
     public Vector3 Move; // the direction that the projectile moves
-    Rigidbody Attached; // The object that the grappling hook has attached to
     public bool fired; // Has this been fired
-    public bool Hooked;
-    public GameObject playerObject;
-    public GrapplingHook playerGrappleScript;
+    public bool Hooked; // Are we currently hanging
+    bool SpeedReel;
+
+
+    GameObject playerObject;
     BoxCollider2D myCollider;
     LayerMask GroundMask;
     LineRenderer myLineRenderer;
+    DistanceJoint2D myDistanceJoint;
+
+    Vector2 CursorWorldPosition;
 
     // Use this for initialization
     void Start () {
@@ -25,43 +30,63 @@ public class GrappleProjectile : MonoBehaviour {
         myCollider.isTrigger = true;
         GroundMask = LayerMask.GetMask("Ground");
         myLineRenderer = GetComponent<LineRenderer>();
-	}
+        myDistanceJoint = GetComponent<DistanceJoint2D>();
+
+
+        playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject)
+            myDistanceJoint.connectedBody = playerObject.GetComponent<Rigidbody2D>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-
-        // State: The projectile is fired and has yet to hit anything
-        if(fired && !Hooked)
+        if(playerObject)
         {
-            // Move
-            transform.Translate(Move * Time.deltaTime * speed);
-            handleCasting(); // Raycast to check if it hit
 
-            // Make sure it doesn't go too far
-            if (Vector2.Distance(transform.position, playerObject.transform.position) > maxDistance && !Hooked)
+            handleCursor();
+            handleInput();
+
+
+            // State: The projectile is fired and has yet to hit anything
+            if (fired && !Hooked)
             {
-                fired = false;
+                // Move
+                transform.Translate(Move * Time.deltaTime * speed);
+                handleCasting(); // Raycast to check if it hit
+
+                // Make sure it doesn't go too far
+                if (Vector2.Distance(transform.position, playerObject.transform.position) > maxDistance && !Hooked)
+                {
+                    fired = false;
+                }
+
+            }
+
+            // State: The projectile hasn't been fired
+            if ((!fired) || (!fired && Hooked))
+            {
+                transform.position = playerObject.transform.position;
+            }
+
+
+            myDistanceJoint.enabled = Hooked;
+            myLineRenderer.enabled = Hooked;
+            if (Hooked)
+            {
+                myLineRenderer.SetPosition(0, transform.position);
+                myLineRenderer.SetPosition(1, playerObject.transform.position);
+
             }
 
         }
-
-        // State: The projectile hasn't been fired
-        if((!fired) || (!fired && Hooked))
+        else
         {
-            transform.position = playerObject.transform.position;
+            playerObject = GameObject.FindGameObjectWithTag("Player");
+            if(playerObject)
+                myDistanceJoint.connectedBody = playerObject.GetComponent<Rigidbody2D>();
         }
 
-        
-
-        myLineRenderer.enabled = Hooked;
-        if (Hooked)
-        {
-            myLineRenderer.SetPosition(0, transform.position);
-            myLineRenderer.SetPosition(1, playerObject.transform.position);
-           
-        }
-
-	}
+    }
 
 
     public void FireHook(Vector3 dir)
@@ -91,53 +116,71 @@ public class GrappleProjectile : MonoBehaviour {
         {
             Debug.Log("Hit something");
             Vector2 hitPosition = hit.point; // This wil set the sprite of the hook to the location
-            Hooked = true; 
-
-            // We hit something  add  a rigidbody to it
-            if (!hit.rigidbody)
-            {
-                Rigidbody2D body = hit.transform.gameObject.AddComponent<Rigidbody2D>();
-                body.isKinematic = true;
-                body.gravityScale = 0;
-            }
+            Hooked = true;
 
 
-
-            Rigidbody2D currentHit = hit.rigidbody;
-
-
-            // Get the real world point position
-            Vector2 point = hit.point - new Vector2(hit.transform.position.x, hit.transform.position.y);
-            point.x = point.x / hit.transform.localScale.x;
-            point.y = point.y / hit.transform.localScale.y;
-
+            myDistanceJoint.distance = ((Vector2)playerObject.transform.position - hit.point).magnitude;
+            
+            myDistanceJoint.connectedAnchor = new Vector2(0,0);
             // Move to that point
             transform.position = hit.point;
 
-            playerGrappleScript.GrappleResponse(currentHit, (playerObject.transform.position - transform.position).magnitude, point);
         }
         else
         {
 
         }
     }
+    void handleInput()
+    {
 
-    //void OnCollisionEnter2D(Collision2D col)
-    //{
-    //    Debug.Log("Hit");
-    //    if(col.gameObject.tag == "Ground")
-    //    {
-    //        Debug.Log("Registered Collision");
-    //        if (!col.rigidbody)
-    //        {
-    //            Rigidbody2D body = col.transform.gameObject.AddComponent<Rigidbody2D>();
-    //            body.isKinematic = true;
-    //            body.gravityScale = 0;
-    //        }
-    //        fired = false;
+        if (Input.GetMouseButtonDown(0))
+        {
+            Hooked = false;
+            FireHook(CursorWorldPosition - (Vector2)transform.position);
+        }
 
-    //        // We've hit something
-    //        //playerGrappleScript.GrappleResponse(col.contacts[0].point, )
-    //    }
-    //}
+        if (Input.GetMouseButtonDown(1))
+        {
+            Hooked = false;
+            resetHook();
+        }
+
+
+        if (Input.GetKey(KeyCode.E) && Hooked && !SpeedReel) // Go in
+        {
+            myDistanceJoint.distance -= .2f;
+        }
+
+        if (Input.GetKey(KeyCode.Q) && Hooked && !SpeedReel)
+        {
+            myDistanceJoint.distance += .2f;
+        }
+
+        if (Input.GetKey(KeyCode.Space) && Hooked && !SpeedReel)
+        {
+            SpeedReel = true;
+        }
+
+        //reel in super fast
+        if (SpeedReel)
+        {
+            if (myDistanceJoint.distance < 1.8)
+            {
+                myDistanceJoint.distance -= (myDistanceJoint.distance - 1);
+                SpeedReel = false;
+            }
+            else
+            {
+                myDistanceJoint.distance -= .8f;
+            }
+        }
+    }
+
+    void handleCursor()
+    {
+        Vector2 pos = Input.mousePosition;
+        pos = (Vector2)Camera.main.ScreenToWorldPoint(pos);
+        CursorWorldPosition = pos;
+    }
 }

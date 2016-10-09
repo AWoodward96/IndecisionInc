@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Platform
+  - GrapplingHook
+  - GameManager
   layers:
   - Default
   - TransparentFX
