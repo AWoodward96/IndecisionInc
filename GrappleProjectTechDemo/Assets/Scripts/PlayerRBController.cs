@@ -123,6 +123,11 @@ public class PlayerRBController : MonoBehaviour
             }
             
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Application.LoadLevel("LevelSelector");
+        }
     }
 
 
