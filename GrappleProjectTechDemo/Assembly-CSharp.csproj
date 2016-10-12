@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DeathMaker.cs" />
+     <Compile Include="Assets\ObjectiveScript.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Deprecated\GrapplingHook.cs" />
      <Compile Include="Assets\Scripts\Deprecated\Object.cs" />

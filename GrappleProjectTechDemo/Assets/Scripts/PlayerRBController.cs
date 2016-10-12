@@ -136,6 +136,12 @@ public class PlayerRBController : MonoBehaviour
         grapplingHook.resetHook();
         if (GM)
             GM.resetPlayer();
+        else
+        {
+            GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            GM.resetPlayer();
+        }
+
         gameObject.SetActive(false); // This will shut everything down for a bit
     }
 

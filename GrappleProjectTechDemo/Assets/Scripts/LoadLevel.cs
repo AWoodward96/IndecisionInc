@@ -1,23 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class LoadLevel : MonoBehaviour {
+public class LoadLevel : MonoBehaviour
+{
 
-    public string id;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    // For loading specific scenes
+    public void loadSpecificScene(int index)
     {
-	    
-	}
+        if (index < SceneManager.sceneCount)
+            SceneManager.LoadScene(index);
+    }
 
-    void OnMouseDown()
+    public void loadSpecificScene(string sceneName)
     {
-        Debug.Log("Mouse Is Down");
-        Application.LoadLevel(id);
+        // This is a lot less safe, but it's also a lot more convinient
+        SceneManager.LoadScene(sceneName);
     }
 }
