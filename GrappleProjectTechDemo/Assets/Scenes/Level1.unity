@@ -250,12 +250,12 @@ Prefab:
     - target: {fileID: 224000012182609768, guid: d12d3f47a697ea341876e72e42da5a60,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000012182609768, guid: d12d3f47a697ea341876e72e42da5a60,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d12d3f47a697ea341876e72e42da5a60, type: 2}
@@ -819,6 +819,10 @@ Prefab:
       propertyPath: jetpackSlider
       value: 
       objectReference: {fileID: 2851625}
+    - target: {fileID: 11491680, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: jetpackDuration
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
   m_IsPrefabParent: 0

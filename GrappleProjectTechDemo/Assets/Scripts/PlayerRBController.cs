@@ -1,6 +1,40 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+
+static class Constants
+{
+    public const int EMITTER_UP     = 0;
+    public const int EMITTER_DOWN   = 1;
+    public const int EMITTER_LEFT   = 2;
+    public const int EMITTER_RIGHT  = 3;
+}
+
+public class AnimationDuration
+{
+    private float duration;
+    private float currentTime;
+    public bool active;
+
+    public AnimationDuration(float lengthOfAnimation)
+    {
+        duration = lengthOfAnimation;
+        currentTime = 0;
+        active = true;
+    }
+
+    public void update(float dt)
+    {
+        currentTime += dt;
+        if (currentTime >= duration) active = false;
+    }
+    public void reset()
+    {
+        currentTime = 0;
+        active = true;
+    }
+}
 
 public class PlayerRBController : MonoBehaviour
 {
@@ -11,10 +45,10 @@ public class PlayerRBController : MonoBehaviour
     public Slider jetpackSlider;
     private int jetpackCooldown;
 
-    public ParticleSystem emitterUp;
-    public ParticleSystem emitterDown;
-    public ParticleSystem emitterLeft;
-    public ParticleSystem emitterRight;
+    //public Dictionary<string, ParticleSystem> emitters;
+    public ParticleSystem[] emitters;
+    private AnimationDuration[] durations = new AnimationDuration[4];
+    public float jetpackDuration;
 
     // Just in case we need it
     public GameObject GrapplingHookPrefab;
@@ -53,6 +87,11 @@ public class PlayerRBController : MonoBehaviour
     {
         Physics.gravity = new Vector3(0, gravity, 0);
         handleInput();
+
+        for (int i = 0; i < durations.Length; i++)
+        {
+            if (durations[i] != null) durations[i].update(Time.deltaTime);
+        }
     }
 
     void FixedUpdate()
@@ -86,14 +125,14 @@ public class PlayerRBController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.W))
             {
-                emitterDown.enableEmission = true;
+                setJetpackState(Constants.EMITTER_DOWN);
                 myRigidbody.AddForce(new Vector2(0, jumpForce));
                 jetpackCooldown -= 30;
             }
 
             if (Input.GetKeyDown(KeyCode.A))
             {
-                emitterRight.enableEmission = true;
+                setJetpackState(Constants.EMITTER_RIGHT);
                 myRigidbody.AddForce(new Vector2(-jumpForce, 0));
                 jetpackCooldown -= 30;
             }
@@ -101,7 +140,7 @@ public class PlayerRBController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.S))
             {
-                emitterUp.enableEmission = true;
+                setJetpackState(Constants.EMITTER_UP);
                 myRigidbody.AddForce(new Vector2(0, -jumpForce));
                 jetpackCooldown -= 30;
             }
@@ -109,19 +148,21 @@ public class PlayerRBController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.D))
             {
-                emitterLeft.enableEmission = true;
+                setJetpackState(Constants.EMITTER_LEFT);
                 myRigidbody.AddForce(new Vector2(jumpForce, 0));
                 jetpackCooldown -= 30;
             }
 
             if (!Input.anyKey)
             {
-                emitterLeft.enableEmission = false;
-                emitterUp.enableEmission = false;
-                emitterRight.enableEmission = false;
-                emitterDown.enableEmission = false;
+               
             }
-            
+
+            for (int i = 0; i < durations.Length; i++)
+            {
+                if (durations[i] != null && !durations[i].active) emitters[i].enableEmission = false;
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -143,6 +184,21 @@ public class PlayerRBController : MonoBehaviour
         }
 
         gameObject.SetActive(false); // This will shut everything down for a bit
+    }
+
+
+    private void setJetpackState(int emitterIndex)
+    {
+        emitters[emitterIndex].enableEmission = true;
+
+        if (durations[emitterIndex]!= null)
+        {
+            durations[emitterIndex].reset();
+        }
+        else
+        {
+            durations[emitterIndex] = new AnimationDuration(jetpackDuration);
+        }
     }
 
 }

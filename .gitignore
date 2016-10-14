@@ -3,7 +3,8 @@
 # =============== #
 Temp/
 Library/
-
+GrappleProjectTechDemo/ProjectSettings/ProjectSettings.asset
+GrappleProjectTechDemo/ProjectSettings/GraphicsSettings.asset
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
