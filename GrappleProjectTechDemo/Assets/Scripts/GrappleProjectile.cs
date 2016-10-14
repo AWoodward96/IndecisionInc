@@ -182,4 +182,14 @@ public class GrappleProjectile : MonoBehaviour {
         pos = (Vector2)Camera.main.ScreenToWorldPoint(pos);
         CursorWorldPosition = pos;
     }
+
+
+    void OnTriggerEnter2D(Collider2D Col)
+    {
+        if(Col.tag == "Unhookable" && fired)
+        {
+            Hooked = false;
+            resetHook();
+        }
+    }
 }

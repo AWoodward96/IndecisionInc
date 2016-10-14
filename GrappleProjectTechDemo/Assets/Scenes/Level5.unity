@@ -375,7 +375,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 198554, guid: fcebad99b26ad124b97fcef7c57a1760, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: Unhookable
       objectReference: {fileID: 0}
     - target: {fileID: 198554, guid: fcebad99b26ad124b97fcef7c57a1760, type: 2}
       propertyPath: m_Layer

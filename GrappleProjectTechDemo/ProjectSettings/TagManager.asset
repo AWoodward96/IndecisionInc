@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - GrapplingHook
   - GameManager
+  - Unhookable
   layers:
   - Default
   - TransparentFX
