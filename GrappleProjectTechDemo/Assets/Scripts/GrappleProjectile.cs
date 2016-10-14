@@ -14,7 +14,6 @@ public class GrappleProjectile : MonoBehaviour {
     public bool Hooked; // Are we currently hanging
     bool SpeedReel;
 
-
     GameObject playerObject;
     BoxCollider2D myCollider;
     LayerMask GroundMask;
@@ -137,7 +136,7 @@ public class GrappleProjectile : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             Hooked = false;
-            FireHook(CursorWorldPosition - (Vector2)transform.position);
+            FireHook(CursorWorldPosition - (Vector2)playerObject.transform.position);
         }
 
         if (Input.GetMouseButtonDown(1))
