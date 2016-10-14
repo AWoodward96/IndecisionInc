@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11491680}
   - 61: {fileID: 6150328}
   - 50: {fileID: 5077422}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player (1)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - 4: {fileID: 4000012533754652}
   - 198: {fileID: 198000011778261278}
   - 199: {fileID: 199000011525490988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: down_facing_jet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   - 4: {fileID: 4000012332192294}
   - 198: {fileID: 198000010181610926}
   - 199: {fileID: 199000014069614436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'right_facing_jet '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - 4: {fileID: 4000014147683370}
   - 198: {fileID: 198000011089536672}
   - 199: {fileID: 199000013568385624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: up_facing_jet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - 4: {fileID: 4000010951023514}
   - 198: {fileID: 198000011474323804}
   - 199: {fileID: 199000011264609340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: left_facing_jet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
