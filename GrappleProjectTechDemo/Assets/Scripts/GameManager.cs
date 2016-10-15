@@ -66,10 +66,8 @@ public class GameManager : MonoBehaviour {
     // For transitioning to the next level
     public void loadNextLevel()
     {
-        Debug.Log(SceneManager.GetActiveScene().buildIndex + " || " + SceneManager.sceneCountInBuildSettings);
         if(SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
-        {
-            Debug.Log("HMM");
+        { 
             loadSpecificScene("LevelSelector");
             return;
         }
@@ -90,15 +88,16 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void resetPlayer()
+    public void resetPlayer(GrappleProjectile proj)
     {
         // The players died and needs to be sent back to the starting position
-        StartCoroutine(resetCoroutine());
+        StartCoroutine(resetCoroutine(proj));
     }
 
-    IEnumerator resetCoroutine()
+    IEnumerator resetCoroutine(GrappleProjectile grapplinghook)
     {
         yield return new WaitForSeconds(1);
+        grapplinghook.gameObject.SetActive(true);
         PlayerObject.SetActive(true);
         PlayerObject.transform.position = PlayerStartPos;
     }

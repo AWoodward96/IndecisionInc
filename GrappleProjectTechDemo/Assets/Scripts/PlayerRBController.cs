@@ -92,6 +92,12 @@ public class PlayerRBController : MonoBehaviour
         {
             if (durations[i] != null) durations[i].update(Time.deltaTime);
         }
+
+        // Also sync the GUI to the players position
+        if(jetpackSlider)
+        {
+            jetpackSlider.transform.parent.transform.position = transform.position;
+        }
     }
 
     void FixedUpdate()
@@ -174,15 +180,18 @@ public class PlayerRBController : MonoBehaviour
 
     public void KillPlayer()
     {
+        grapplingHook.Hooked = false;
         grapplingHook.resetHook();
+
         if (GM)
-            GM.resetPlayer();
+            GM.resetPlayer(grapplingHook);
         else
         {
             GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            GM.resetPlayer();
+            GM.resetPlayer(grapplingHook);
         }
 
+        grapplingHook.gameObject.SetActive(false);
         gameObject.SetActive(false); // This will shut everything down for a bit
     }
 

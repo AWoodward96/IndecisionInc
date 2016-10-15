@@ -135,8 +135,16 @@ public class GrappleProjectile : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-            Hooked = false;
-            FireHook(CursorWorldPosition - (Vector2)playerObject.transform.position);
+            if(Hooked)
+            {
+                Hooked = false;
+                resetHook();
+            }else
+            {
+                Hooked = false;
+                FireHook(CursorWorldPosition - (Vector2)playerObject.transform.position);
+            }
+
         }
 
         if (Input.GetMouseButtonDown(1))
