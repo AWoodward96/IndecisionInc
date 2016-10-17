@@ -43,7 +43,7 @@ public class PlayerRBController : MonoBehaviour
     Rigidbody2D myRigidbody;
     public float jumpForce;
     public Slider jetpackSlider;
-    private int jetpackCooldown;
+    private float jetpackCooldown;
 
     //public Dictionary<string, ParticleSystem> emitters;
     public ParticleSystem[] emitters;
@@ -104,7 +104,7 @@ public class PlayerRBController : MonoBehaviour
     {
         if (jetpackCooldown < 100)
         {
-            jetpackCooldown += 1;
+            jetpackCooldown += .4f;
         }
 
         if(jetpackSlider)

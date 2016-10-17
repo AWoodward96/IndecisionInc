@@ -13,6 +13,7 @@ public class GrappleProjectile : MonoBehaviour {
     public bool fired; // Has this been fired
     public bool Hooked; // Are we currently hanging
     bool SpeedReel;
+    Vector3 dirToHook;
 
     GameObject playerObject;
     BoxCollider2D myCollider;
@@ -153,14 +154,19 @@ public class GrappleProjectile : MonoBehaviour {
             resetHook();
         }
 
+        //calc normal vector to hook from player
+        dirToHook = Vector3.Normalize((Vector2)this.transform.position - (Vector2)playerObject.transform.position);
 
-        if (Input.GetKey(KeyCode.E) && Hooked && !SpeedReel) // Go in
+        float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
+        if ((Input.GetKey(KeyCode.E) || scrollWheel > 0f) && Hooked && !SpeedReel) // Go in
         {
+            myDistanceJoint.connectedBody.AddForce(dirToHook * .8f);
             myDistanceJoint.distance -= .2f;
         }
 
-        if (Input.GetKey(KeyCode.Q) && Hooked && !SpeedReel)
+        if ((Input.GetKey(KeyCode.Q) || scrollWheel < 0f) && Hooked && !SpeedReel)
         {
+            myDistanceJoint.connectedBody.AddForce(dirToHook * -.8f);
             myDistanceJoint.distance += .2f;
         }
 
@@ -174,11 +180,13 @@ public class GrappleProjectile : MonoBehaviour {
         {
             if (myDistanceJoint.distance < 1.8)
             {
+                myDistanceJoint.connectedBody.AddForce(dirToHook * (myDistanceJoint.distance - 1) * 4);
                 myDistanceJoint.distance -= (myDistanceJoint.distance - 1);
                 SpeedReel = false;
             }
             else
             {
+                myDistanceJoint.connectedBody.AddForce(dirToHook * 3.2f);
                 myDistanceJoint.distance -= .8f;
             }
         }
