@@ -5,7 +5,7 @@ using System.Collections;
 public class ObjectiveScript : MonoBehaviour {
 
     BoxCollider2D myCollider;
-    bool Activatable;
+    public bool Activatable;
 
     public GameManager GM;
 
@@ -24,7 +24,8 @@ public class ObjectiveScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-        if(Activatable && Input.GetKeyDown(KeyCode.W))
+        //obsolete
+        /*if(Activatable && Input.GetKeyDown(KeyCode.W))
         {
             if(!GM)
             {
@@ -32,7 +33,7 @@ public class ObjectiveScript : MonoBehaviour {
             }
 
             GM.loadNextLevel();
-        }
+        }*/
 	}
 
     void OnTriggerEnter2D(Collider2D Col)
@@ -40,6 +41,12 @@ public class ObjectiveScript : MonoBehaviour {
         if(Col.tag == "Player")
         {
             Activatable = true;
+            if (!GM)
+            {
+                GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            }
+
+            GM.loadNextLevel();
         }
     }
 

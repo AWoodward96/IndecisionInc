@@ -162,12 +162,20 @@ public class GrappleProjectile : MonoBehaviour {
         {
             myDistanceJoint.connectedBody.AddForce(dirToHook * .8f);
             myDistanceJoint.distance -= .2f;
+            if (myDistanceJoint.distance < 1)
+            {
+                myDistanceJoint.distance = 1;
+            }
         }
 
         if ((Input.GetKey(KeyCode.Q) || scrollWheel < 0f) && Hooked && !SpeedReel)
         {
             myDistanceJoint.connectedBody.AddForce(dirToHook * -.8f);
             myDistanceJoint.distance += .2f;
+            if(myDistanceJoint.distance > maxDistance)
+            {
+                myDistanceJoint.distance = maxDistance;
+            }
         }
 
         if (Input.GetKey(KeyCode.Space) && Hooked && !SpeedReel)

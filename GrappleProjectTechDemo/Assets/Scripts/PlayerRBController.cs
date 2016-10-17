@@ -49,6 +49,7 @@ public class PlayerRBController : MonoBehaviour
     public ParticleSystem[] emitters;
     private AnimationDuration[] durations = new AnimationDuration[4];
     public float jetpackDuration;
+    public bool permaJetpack;
 
     // Just in case we need it
     public GameObject GrapplingHookPrefab;
@@ -133,14 +134,20 @@ public class PlayerRBController : MonoBehaviour
             {
                 setJetpackState(Constants.EMITTER_DOWN);
                 myRigidbody.AddForce(new Vector2(0, jumpForce));
-                jetpackCooldown -= 30;
+                if (!permaJetpack)
+                {
+                    jetpackCooldown -= 30;
+                }
             }
 
             if (Input.GetKeyDown(KeyCode.A))
             {
                 setJetpackState(Constants.EMITTER_RIGHT);
                 myRigidbody.AddForce(new Vector2(-jumpForce, 0));
-                jetpackCooldown -= 30;
+                if (!permaJetpack)
+                {
+                    jetpackCooldown -= 30;
+                }
             }
 
 
@@ -148,7 +155,10 @@ public class PlayerRBController : MonoBehaviour
             {
                 setJetpackState(Constants.EMITTER_UP);
                 myRigidbody.AddForce(new Vector2(0, -jumpForce));
-                jetpackCooldown -= 30;
+                if (!permaJetpack)
+                {
+                    jetpackCooldown -= 30;
+                }
             }
 
 
@@ -156,7 +166,10 @@ public class PlayerRBController : MonoBehaviour
             {
                 setJetpackState(Constants.EMITTER_LEFT);
                 myRigidbody.AddForce(new Vector2(jumpForce, 0));
-                jetpackCooldown -= 30;
+                if (!permaJetpack)
+                {
+                    jetpackCooldown -= 30;
+                }
             }
 
             if (!Input.anyKey)
@@ -181,6 +194,7 @@ public class PlayerRBController : MonoBehaviour
     public void KillPlayer()
     {
         grapplingHook.Hooked = false;
+        jetpackCooldown = 100;
         grapplingHook.resetHook();
 
         if (GM)
