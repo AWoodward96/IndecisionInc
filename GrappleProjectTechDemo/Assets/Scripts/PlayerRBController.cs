@@ -43,7 +43,9 @@ public class PlayerRBController : MonoBehaviour
     Rigidbody2D myRigidbody;
     public float jumpForce;
     public Slider jetpackSlider;
-    private float jetpackCooldown;
+    public float jetpackCooldown;
+
+    public Image sliderColor;
 
     //public Dictionary<string, ParticleSystem> emitters;
     public ParticleSystem[] emitters;
@@ -63,6 +65,8 @@ public class PlayerRBController : MonoBehaviour
     void Start()
     {
         
+        Debug.Log(jetpackSlider.GetComponent("Image"));
+
         myRigidbody = GetComponent<Rigidbody2D>();
         /*
         emitterUp    = GameObject.Find("up_facing_jet").GetComponent<ParticleSystem>();
@@ -111,14 +115,14 @@ public class PlayerRBController : MonoBehaviour
         if(jetpackSlider)
         {
             jetpackSlider.value = jetpackCooldown;
-
+            
             if (jetpackCooldown < 30)
             {
-                jetpackSlider.image.color = Color.red;
+                sliderColor.color = Color.red;
             }
             else
             {
-                jetpackSlider.image.color = Color.cyan;
+                sliderColor.color = Color.cyan;
             }
         }
 
@@ -127,10 +131,7 @@ public class PlayerRBController : MonoBehaviour
 
     void handleInput()
     {
-        if (jetpackCooldown >= 30)
-        {
-
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W) && jetpackCooldown >= 30)
             {
                 setJetpackState(Constants.EMITTER_DOWN);
                 myRigidbody.AddForce(new Vector2(0, jumpForce));
@@ -140,7 +141,7 @@ public class PlayerRBController : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) && jetpackCooldown >= 30)
             {
                 setJetpackState(Constants.EMITTER_RIGHT);
                 myRigidbody.AddForce(new Vector2(-jumpForce, 0));
@@ -151,7 +152,7 @@ public class PlayerRBController : MonoBehaviour
             }
 
 
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.S) && jetpackCooldown >= 30)
             {
                 setJetpackState(Constants.EMITTER_UP);
                 myRigidbody.AddForce(new Vector2(0, -jumpForce));
@@ -162,7 +163,7 @@ public class PlayerRBController : MonoBehaviour
             }
 
 
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) && jetpackCooldown >= 30)
             {
                 setJetpackState(Constants.EMITTER_LEFT);
                 myRigidbody.AddForce(new Vector2(jumpForce, 0));
@@ -181,8 +182,6 @@ public class PlayerRBController : MonoBehaviour
             {
                 if (durations[i] != null && !durations[i].active) emitters[i].enableEmission = false;
             }
-
-        }
 
         if (Input.GetKeyDown(KeyCode.P))
         {

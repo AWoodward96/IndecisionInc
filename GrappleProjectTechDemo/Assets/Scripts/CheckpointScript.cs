@@ -33,8 +33,10 @@ public class CheckpointScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D Col)
     {
-        if (Col.tag == "Player")
+        if (Col.tag == "Player" && !isActive)
         {
+            Col.gameObject.GetComponent<PlayerRBController>().jetpackCooldown = 100;
+            Debug.Log("CHECKPOINT!!!");
             SetActive();
         }
     }

@@ -6,6 +6,7 @@ public class ObjectiveScript : MonoBehaviour {
 
     BoxCollider2D myCollider;
     public bool Activatable;
+    public bool WorldEnd;
 
     public GameManager GM;
 
@@ -46,7 +47,7 @@ public class ObjectiveScript : MonoBehaviour {
                 GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             }
 
-            GM.loadNextLevel();
+            GM.loadNextLevel(WorldEnd);
         }
     }
 

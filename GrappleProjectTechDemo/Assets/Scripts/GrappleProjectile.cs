@@ -140,6 +140,7 @@ public class GrappleProjectile : MonoBehaviour {
             {
                 Hooked = false;
                 resetHook();
+                FireHook(CursorWorldPosition - (Vector2)playerObject.transform.position);
             }else
             {
                 Hooked = false;

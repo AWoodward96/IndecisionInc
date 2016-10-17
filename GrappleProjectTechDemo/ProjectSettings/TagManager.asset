@@ -10,6 +10,7 @@ TagManager:
   - GameManager
   - Unhookable
   - Checkpoint
+  - WorldScreen
   layers:
   - Default
   - TransparentFX

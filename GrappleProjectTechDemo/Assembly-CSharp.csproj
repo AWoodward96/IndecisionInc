@@ -45,23 +45,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DeathMaker.cs" />
-     <Compile Include="Assets\LaserScript.cs" />
-     <Compile Include="Assets\ObjectiveScript.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CheckpointScript.cs" />
+     <Compile Include="Assets\Scripts\DeathMaker.cs" />
      <Compile Include="Assets\Scripts\Deprecated\GrapplingHook.cs" />
      <Compile Include="Assets\Scripts\Deprecated\Object.cs" />
      <Compile Include="Assets\Scripts\Deprecated\PlayerObject.cs" />
      <Compile Include="Assets\Scripts\EmitterController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GrappleProjectile.cs" />
+     <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\ObjectiveScript.cs" />
      <Compile Include="Assets\Scripts\PlayerRBController.cs" />
      <None Include="Assets\Sprites\platformIndustrial_sheet@2.xml" />
      <None Include="Assets\Sprites\Kenney Items\License.txt" />
      <None Include="Assets\Sprites\platformIndustrial_sheet.xml" />
-     <None Include="Assets\Fonts\ReadMe.txt" />
+     <None Include="Assets\Plugins\Fonts\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

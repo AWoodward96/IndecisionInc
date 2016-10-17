@@ -121,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013634543618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -575.3, y: 16.272886, z: 0.1}
+  m_LocalPosition: {x: -516, y: 16.272886, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -242,12 +242,13 @@ MonoBehaviour:
   gravity: -40
   jumpForce: 1000
   jetpackSlider: {fileID: 0}
+  jetpackCooldown: 0
   emitters:
   - {fileID: 198000012452609768}
   - {fileID: 198000013874115244}
   - {fileID: 198000010681276526}
   - {fileID: 198000011569295052}
-  jetpackDuration: 0.5
+  jetpackDuration: 0.1
   permaJetpack: 0
   GrapplingHookPrefab: {fileID: 159854, guid: e1c1ad8febb32124ba4ca2646f7b8140, type: 2}
   GM: {fileID: 0}

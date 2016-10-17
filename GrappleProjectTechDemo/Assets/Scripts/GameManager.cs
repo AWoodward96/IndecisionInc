@@ -64,10 +64,15 @@ public class GameManager : MonoBehaviour {
     }
 
     // For transitioning to the next level
-    public void loadNextLevel()
+    public void loadNextLevel(bool toStart)
     {
         if(SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
-        { 
+        {
+            loadSpecificScene("LevelSelector");
+            return;
+        }
+        if(toStart)
+        {
             loadSpecificScene("LevelSelector");
             return;
         }
