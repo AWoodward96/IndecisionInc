@@ -97,8 +97,26 @@ public class GameManager : MonoBehaviour {
     IEnumerator resetCoroutine(GrappleProjectile grapplinghook)
     {
         yield return new WaitForSeconds(1);
+
+        // checkpoints
+        Vector3 PlayerRespawnLoc = PlayerStartPos;
+        GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        foreach (GameObject cp in checkpoints)
+        {
+            if (cp.GetComponent<CheckpointScript>().IsActive())
+            {
+                Debug.Log("Found active checkpoint");
+                PlayerRespawnLoc = cp.GetComponent<CheckpointScript>().RespawnLocation();
+                break;
+            }
+            else
+            {
+                Debug.Log("Inactive checkpoint found...");
+            }
+        }
+
         grapplinghook.gameObject.SetActive(true);
         PlayerObject.SetActive(true);
-        PlayerObject.transform.position = PlayerStartPos;
+        PlayerObject.transform.position = PlayerRespawnLoc;
     }
 }
