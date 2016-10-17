@@ -454,18 +454,15 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Jetpack:
 
-    W/A/S/D: Short Burst of thrust in a direction
-
+    WASD: Quick burst of thrust
 
     Grapple Shoot: LMB
 
-    Grapple Let Go: RMB
+    Grapple Release: RMB
 
-    Grapple Reel-in: E
+    Grapple Reel: Scroll Wheel
 
-    Grapple Reel-out: Q
-
-'
+    Quick Reel: Spacebar'
 --- !u!222 &639635601
 CanvasRenderer:
   m_ObjectHideFlags: 0

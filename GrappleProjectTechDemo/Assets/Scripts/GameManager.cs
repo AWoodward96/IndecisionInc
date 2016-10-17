@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour {
 
     IEnumerator resetCoroutine(GrappleProjectile grapplinghook)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.7f);
 
         // checkpoints
         Vector3 PlayerRespawnLoc = PlayerStartPos;
