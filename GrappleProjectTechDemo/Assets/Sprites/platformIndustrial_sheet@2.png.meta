@@ -1,0 +1,1627 @@
+fileFormatVersion: 2
+guid: e4cf6d995fe78604fa7ae8b5a655c685
+timeCreated: 1476674285
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: platformIndustrial_001.png
+    21300002: platformIndustrial_002.png
+    21300004: platformIndustrial_003.png
+    21300006: platformIndustrial_004.png
+    21300008: platformIndustrial_005.png
+    21300010: platformIndustrial_006.png
+    21300012: platformIndustrial_007.png
+    21300014: platformIndustrial_008.png
+    21300016: platformIndustrial_009.png
+    21300018: platformIndustrial_010.png
+    21300020: platformIndustrial_011.png
+    21300022: platformIndustrial_012.png
+    21300024: platformIndustrial_013.png
+    21300026: platformIndustrial_014.png
+    21300028: platformIndustrial_015.png
+    21300030: platformIndustrial_016.png
+    21300032: platformIndustrial_017.png
+    21300034: platformIndustrial_018.png
+    21300036: platformIndustrial_019.png
+    21300038: platformIndustrial_020.png
+    21300040: platformIndustrial_021.png
+    21300042: platformIndustrial_022.png
+    21300044: platformIndustrial_023.png
+    21300046: platformIndustrial_024.png
+    21300048: platformIndustrial_025.png
+    21300050: platformIndustrial_026.png
+    21300052: platformIndustrial_027.png
+    21300054: platformIndustrial_028.png
+    21300056: platformIndustrial_029.png
+    21300058: platformIndustrial_030.png
+    21300060: platformIndustrial_031.png
+    21300062: platformIndustrial_032.png
+    21300064: platformIndustrial_033.png
+    21300066: platformIndustrial_034.png
+    21300068: platformIndustrial_035.png
+    21300070: platformIndustrial_036.png
+    21300072: platformIndustrial_037.png
+    21300074: platformIndustrial_038.png
+    21300076: platformIndustrial_039.png
+    21300078: platformIndustrial_040.png
+    21300080: platformIndustrial_041.png
+    21300082: platformIndustrial_042.png
+    21300084: platformIndustrial_043.png
+    21300086: platformIndustrial_044.png
+    21300088: platformIndustrial_045.png
+    21300090: platformIndustrial_046.png
+    21300092: platformIndustrial_047.png
+    21300094: platformIndustrial_048.png
+    21300096: platformIndustrial_049.png
+    21300098: platformIndustrial_050.png
+    21300100: platformIndustrial_051.png
+    21300102: platformIndustrial_052.png
+    21300104: platformIndustrial_053.png
+    21300106: platformIndustrial_054.png
+    21300108: platformIndustrial_055.png
+    21300110: platformIndustrial_056.png
+    21300112: platformIndustrial_057.png
+    21300114: platformIndustrial_058.png
+    21300116: platformIndustrial_059.png
+    21300118: platformIndustrial_060.png
+    21300120: platformIndustrial_061.png
+    21300122: platformIndustrial_062.png
+    21300124: platformIndustrial_063.png
+    21300126: platformIndustrial_064.png
+    21300128: platformIndustrial_065.png
+    21300130: platformIndustrial_066.png
+    21300132: platformIndustrial_067.png
+    21300134: platformIndustrial_068.png
+    21300136: platformIndustrial_069.png
+    21300138: platformIndustrial_070.png
+    21300140: platformIndustrial_071.png
+    21300142: platformIndustrial_072.png
+    21300144: platformIndustrial_073.png
+    21300146: platformIndustrial_074.png
+    21300148: platformIndustrial_075.png
+    21300150: platformIndustrial_076.png
+    21300152: platformIndustrial_077.png
+    21300154: platformIndustrial_078.png
+    21300156: platformIndustrial_079.png
+    21300158: platformIndustrial_080.png
+    21300160: platformIndustrial_081.png
+    21300162: platformIndustrial_082.png
+    21300164: platformIndustrial_083.png
+    21300166: platformIndustrial_084.png
+    21300168: platformIndustrial_085.png
+    21300170: platformIndustrial_086.png
+    21300172: platformIndustrial_087.png
+    21300174: platformIndustrial_088.png
+    21300176: platformIndustrial_089.png
+    21300178: platformIndustrial_090.png
+    21300180: platformIndustrial_091.png
+    21300182: platformIndustrial_092.png
+    21300184: platformIndustrial_093.png
+    21300186: platformIndustrial_094.png
+    21300188: platformIndustrial_095.png
+    21300190: platformIndustrial_096.png
+    21300192: platformIndustrial_097.png
+    21300194: platformIndustrial_098.png
+    21300196: platformIndustrial_099.png
+    21300198: platformIndustrial_100.png
+    21300200: platformIndustrial_101.png
+    21300202: platformIndustrial_102.png
+    21300204: platformIndustrial_103.png
+    21300206: platformIndustrial_104.png
+    21300208: platformIndustrial_105.png
+    21300210: platformIndustrial_106.png
+    21300212: platformIndustrial_107.png
+    21300214: platformIndustrial_108.png
+    21300216: platformIndustrial_109.png
+    21300218: platformIndustrial_110.png
+    21300220: platformIndustrial_111.png
+    21300222: platformIndustrial_112.png
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: platformIndustrial_001.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_002.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_003.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 580
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_004.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 440
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_005.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 866
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_006.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 726
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_007.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_008.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 100
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_009.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 500
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_010.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_011.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_012.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 38
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_013.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_014.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 420
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_015.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 540
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_016.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 960
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_017.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 880
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_018.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 132
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_019.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_020.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 820
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_021.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_022.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 180
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_023.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1020
+        width: 140
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_024.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 18
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_025.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 52
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_026.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 264
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_027.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 12
+        width: 140
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_028.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 244
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_029.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 604
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_030.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 104
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_031.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 324
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_032.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 464
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_033.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 744
+        width: 140
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_034.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 244
+        width: 100
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_035.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 272
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_036.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 316
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_037.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 8
+        width: 140
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_038.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 40
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_039.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 920
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_040.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 840
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_041.png
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1020
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_042.png
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1130
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_043.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 400
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_044.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 260
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_045.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 400
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_046.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 540
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_047.png
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 680
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_048.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 738
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_049.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 720
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_050.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 72
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_051.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 780
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_052.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 6
+        width: 140
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_053.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 760
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_054.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 104
+        width: 100
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_055.png
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 208
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_056.png
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 910
+        width: 60
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_057.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_058.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 580
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_059.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 720
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_060.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 860
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_061.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1000
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_062.png
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1140
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_063.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_064.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 58
+        width: 140
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_065.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 98
+        width: 140
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_066.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 134
+        width: 140
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_067.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 190
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_068.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 330
+        width: 140
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_069.png
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 36
+        width: 139
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_070.png
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 4
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_071.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 680
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_072.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 820
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_073.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 960
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_074.png
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1100
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_075.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 28
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_076.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 168
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_077.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 268
+        width: 140
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_078.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 288
+        width: 140
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_079.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 328
+        width: 140
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_080.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 364
+        width: 140
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_081.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 380
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_082.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 184
+        width: 100
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_083.png
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1140
+        width: 60
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_084.png
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 78
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_085.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1000
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_086.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 878
+        width: 100
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_087.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 840
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_088.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 940
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_089.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1040
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_090.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 620
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_091.png
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1140
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_092.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 480
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_093.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 66
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_094.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 166
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_095.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 306
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_096.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 446
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_097.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 586
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_098.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1140
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_099.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 598
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_100.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 458
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_101.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1006
+        width: 140
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_102.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1084
+        width: 140
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_103.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1162
+        width: 140
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_104.png
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1000
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_105.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_106.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 318
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_107.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 140
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_108.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_109.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_110.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 820
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_111.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: platformIndustrial_112.png
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 198
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

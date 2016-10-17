@@ -105,7 +105,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -493.4
+      value: -493
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.y
@@ -137,7 +137,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalScale.x
-      value: 18.749998
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalScale.y
@@ -260,9 +260,19 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d12d3f47a697ea341876e72e42da5a60, type: 2}
   m_IsPrefabParent: 0
+--- !u!198 &68312749 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198000011778261278, guid: 11da90622880fdb4d9315feabb72a192,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546670839}
 --- !u!4 &183065355 stripped
 Transform:
   m_PrefabParentObject: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+  m_PrefabInternal: {fileID: 1546670839}
+--- !u!198 &226873959 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198000010181610926, guid: 11da90622880fdb4d9315feabb72a192,
+    type: 2}
   m_PrefabInternal: {fileID: 1546670839}
 --- !u!1001 &274216488
 Prefab:
@@ -306,6 +316,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
   m_IsPrefabParent: 0
+--- !u!198 &321421201 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198000011089536672, guid: 11da90622880fdb4d9315feabb72a192,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546670839}
 --- !u!1001 &431911286
 Prefab:
   m_ObjectHideFlags: 0
@@ -315,11 +330,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -570.8
+      value: -570
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 29.1
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.z
@@ -360,6 +375,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
   m_IsPrefabParent: 0
+--- !u!198 &463424938 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198000011474323804, guid: 11da90622880fdb4d9315feabb72a192,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546670839}
 --- !u!1001 &569434312
 Prefab:
   m_ObjectHideFlags: 0
@@ -414,6 +434,242 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &622443786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ccf1b12a84cbc4c983b1e2fa177533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tiles:
+  - Id: 0
+    Sprite: {fileID: 21300000, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 1
+    Sprite: {fileID: 21300002, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 2
+    Sprite: {fileID: 21300004, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 3
+    Sprite: {fileID: 21300006, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 4
+    Sprite: {fileID: 21300008, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 5
+    Sprite: {fileID: 21300010, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 6
+    Sprite: {fileID: 21300012, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 7
+    Sprite: {fileID: 21300014, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 8
+    Sprite: {fileID: 21300016, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 9
+    Sprite: {fileID: 21300018, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 10
+    Sprite: {fileID: 21300020, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 11
+    Sprite: {fileID: 21300022, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 12
+    Sprite: {fileID: 21300024, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 13
+    Sprite: {fileID: 21300026, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 14
+    Sprite: {fileID: 21300028, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 15
+    Sprite: {fileID: 21300030, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 16
+    Sprite: {fileID: 21300032, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 17
+    Sprite: {fileID: 21300034, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 18
+    Sprite: {fileID: 21300036, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 19
+    Sprite: {fileID: 21300038, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 20
+    Sprite: {fileID: 21300040, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 21
+    Sprite: {fileID: 21300042, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 22
+    Sprite: {fileID: 21300044, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 23
+    Sprite: {fileID: 21300046, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 24
+    Sprite: {fileID: 21300048, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 25
+    Sprite: {fileID: 21300050, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 26
+    Sprite: {fileID: 21300052, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 27
+    Sprite: {fileID: 21300054, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 28
+    Sprite: {fileID: 21300056, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 29
+    Sprite: {fileID: 21300058, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 30
+    Sprite: {fileID: 21300060, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 31
+    Sprite: {fileID: 21300062, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 32
+    Sprite: {fileID: 21300064, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 33
+    Sprite: {fileID: 21300066, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 34
+    Sprite: {fileID: 21300068, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 35
+    Sprite: {fileID: 21300070, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 36
+    Sprite: {fileID: 21300072, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 37
+    Sprite: {fileID: 21300074, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 38
+    Sprite: {fileID: 21300076, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 39
+    Sprite: {fileID: 21300078, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 40
+    Sprite: {fileID: 21300080, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 41
+    Sprite: {fileID: 21300082, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 42
+    Sprite: {fileID: 21300084, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 43
+    Sprite: {fileID: 21300086, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 44
+    Sprite: {fileID: 21300088, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 45
+    Sprite: {fileID: 21300090, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 46
+    Sprite: {fileID: 21300092, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 47
+    Sprite: {fileID: 21300094, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 48
+    Sprite: {fileID: 21300096, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 49
+    Sprite: {fileID: 21300098, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 50
+    Sprite: {fileID: 21300100, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 51
+    Sprite: {fileID: 21300102, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 52
+    Sprite: {fileID: 21300104, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 53
+    Sprite: {fileID: 21300106, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 54
+    Sprite: {fileID: 21300108, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 55
+    Sprite: {fileID: 21300110, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 56
+    Sprite: {fileID: 21300112, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 57
+    Sprite: {fileID: 21300114, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 58
+    Sprite: {fileID: 21300116, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 59
+    Sprite: {fileID: 21300118, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 60
+    Sprite: {fileID: 21300120, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 61
+    Sprite: {fileID: 21300122, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 62
+    Sprite: {fileID: 21300124, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 63
+    Sprite: {fileID: 21300126, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 64
+    Sprite: {fileID: 21300128, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 65
+    Sprite: {fileID: 21300130, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 66
+    Sprite: {fileID: 21300132, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 67
+    Sprite: {fileID: 21300134, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 68
+    Sprite: {fileID: 21300136, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 69
+    Sprite: {fileID: 21300138, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 70
+    Sprite: {fileID: 21300140, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 71
+    Sprite: {fileID: 21300142, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 72
+    Sprite: {fileID: 21300144, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 73
+    Sprite: {fileID: 21300146, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 74
+    Sprite: {fileID: 21300148, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 75
+    Sprite: {fileID: 21300150, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 76
+    Sprite: {fileID: 21300152, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 77
+    Sprite: {fileID: 21300154, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 78
+    Sprite: {fileID: 21300156, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 79
+    Sprite: {fileID: 21300158, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 80
+    Sprite: {fileID: 21300160, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 81
+    Sprite: {fileID: 21300162, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 82
+    Sprite: {fileID: 21300164, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 83
+    Sprite: {fileID: 21300166, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 84
+    Sprite: {fileID: 21300168, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 85
+    Sprite: {fileID: 21300170, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 86
+    Sprite: {fileID: 21300172, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 87
+    Sprite: {fileID: 21300174, guid: 475032d60d2722548b0f0d84ad74e13b, type: 3}
+  - Id: 88
+    Sprite: {fileID: 21300002, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 89
+    Sprite: {fileID: 21300014, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 90
+    Sprite: {fileID: 21300018, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 91
+    Sprite: {fileID: 21300020, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 92
+    Sprite: {fileID: 21300022, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 93
+    Sprite: {fileID: 21300024, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 94
+    Sprite: {fileID: 21300036, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 95
+    Sprite: {fileID: 21300046, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 96
+    Sprite: {fileID: 21300048, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 97
+    Sprite: {fileID: 21300050, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 98
+    Sprite: {fileID: 21300052, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 99
+    Sprite: {fileID: 21300054, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 100
+    Sprite: {fileID: 21300074, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 101
+    Sprite: {fileID: 21300098, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 102
+    Sprite: {fileID: 21300102, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 103
+    Sprite: {fileID: 21300106, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 104
+    Sprite: {fileID: 21300108, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 105
+    Sprite: {fileID: 21300122, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 106
+    Sprite: {fileID: 21300124, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 107
+    Sprite: {fileID: 21300148, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 108
+    Sprite: {fileID: 21300162, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 109
+    Sprite: {fileID: 21300164, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 110
+    Sprite: {fileID: 21300184, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
+  - Id: 111
+    Sprite: {fileID: 21300222, guid: e4cf6d995fe78604fa7ae8b5a655c685, type: 3}
 --- !u!1001 &700739125
 Prefab:
   m_ObjectHideFlags: 0
@@ -423,11 +679,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -428.3
+      value: -428
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.57
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.z
@@ -531,11 +787,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -556.6
+      value: -556
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.z
@@ -572,6 +828,61 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1030588895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1030588897}
+  - 114: {fileID: 1030588896}
+  m_Layer: 0
+  m_Name: TileMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1030588896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030588895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d41bc024d0be454ea99e64b3974ec3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tileMapData:
+    m_sizeX: 100
+    m_sizeY: 50
+    m_data: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff510000002700000027000000270000002700000027000000270000002700000027000000270000002700000027000000270000004400000044000000440000004400000044000000440000004400000044000000440000004400000044000000440000004400000044000000440000004400000051000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff47000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff4400000044000000440000004400000044000000440000004400000044000000440000004400000044000000440000004400000044000000440000004400000044000000440000004400000051000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff3200000032000000320000003200000032000000320000003200000032000000320000003200000032000000320000003200000009000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff110000001500000011000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff110000001500000011000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff110000001500000011000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff110000001500000011000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff110000001500000011000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff110000001500000011000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19000000ffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff51000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    m_default: -1
+  m_tileMeshSettings:
+    TilesX: 100
+    TilesY: 50
+    TileResolution: 70
+    TileSize: 1
+    TextureFormat: 4
+    TextureFilterMode: 0
+    MeshMode: 1
+  m_tileSheet: {fileID: 622443786}
+  m_activeInEditMode: 0
+--- !u!4 &1030588897
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030588895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -540, y: -10, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
 --- !u!1001 &1064851074
 Prefab:
   m_ObjectHideFlags: 0
@@ -581,11 +892,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012110559942, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -467.58
+      value: -467.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000012110559942, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 16.89
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4000012110559942, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
       propertyPath: m_LocalPosition.z
@@ -611,6 +922,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 4000012110559942, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
   m_IsPrefabParent: 0
@@ -623,11 +938,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -488.9
+      value: -489
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 51.2
+      value: 51.5
       objectReference: {fileID: 0}
     - target: {fileID: 404570, guid: 6df36d75b1e931449a979d41baff9600, type: 2}
       propertyPath: m_LocalPosition.z
@@ -785,15 +1100,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -516
+      value: -515.952
       objectReference: {fileID: 0}
     - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 16.272886
+      value: 16.4
       objectReference: {fileID: 0}
     - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.1
+      value: -1.97
       objectReference: {fileID: 0}
     - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
       propertyPath: m_LocalRotation.x
@@ -823,6 +1138,34 @@ Prefab:
       propertyPath: jetpackDuration
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 445448, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491680, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: emitters.Array.data[0]
+      value: 
+      objectReference: {fileID: 321421201}
+    - target: {fileID: 11491680, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: emitters.Array.data[1]
+      value: 
+      objectReference: {fileID: 68312749}
+    - target: {fileID: 11491680, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: emitters.Array.data[2]
+      value: 
+      objectReference: {fileID: 463424938}
+    - target: {fileID: 11491680, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
+      propertyPath: emitters.Array.data[3]
+      value: 
+      objectReference: {fileID: 226873959}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11da90622880fdb4d9315feabb72a192, type: 2}
   m_IsPrefabParent: 0
