@@ -44,7 +44,7 @@ public class PlayerRBController : MonoBehaviour
     public float jumpForce;
     public Slider jetpackSlider;
     public float jetpackCooldown;
-
+    public int jetpackFuel;
     public Image sliderColor;
 
     //public Dictionary<string, ParticleSystem> emitters;
@@ -107,7 +107,7 @@ public class PlayerRBController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (jetpackCooldown < 100)
+        if (jetpackCooldown < jetpackFuel)
         {
             jetpackCooldown += .4f;
         }
@@ -221,6 +221,11 @@ public class PlayerRBController : MonoBehaviour
         {
             durations[emitterIndex] = new AnimationDuration(jetpackDuration);
         }
+    }
+
+    public void refillFuel()
+    {
+        jetpackCooldown = jetpackFuel;
     }
 
 }

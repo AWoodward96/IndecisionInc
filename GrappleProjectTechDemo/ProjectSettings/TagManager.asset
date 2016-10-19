@@ -11,6 +11,7 @@ TagManager:
   - Unhookable
   - Checkpoint
   - WorldScreen
+  - Pickup
   layers:
   - Default
   - TransparentFX
