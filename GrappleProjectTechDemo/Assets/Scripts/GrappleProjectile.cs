@@ -13,7 +13,10 @@ public class GrappleProjectile : MonoBehaviour {
     public bool fired; // Has this been fired
     public bool Hooked; // Are we currently hanging
     bool SpeedReel;
+    MovablePlatform targetPlatform;
+    Vector2 CursorWorldPosition;
     Vector3 dirToHook;
+    Vector2 currentHookPos;
 
     GameObject playerObject;
     BoxCollider2D myCollider;
@@ -21,7 +24,7 @@ public class GrappleProjectile : MonoBehaviour {
     LineRenderer myLineRenderer;
     DistanceJoint2D myDistanceJoint;
 
-    Vector2 CursorWorldPosition;
+    Vector2 offsetFromTarget;
 
     // Use this for initialization
     void Start () {
@@ -104,6 +107,12 @@ public class GrappleProjectile : MonoBehaviour {
     {
         Hooked = false;
         fired = false;
+
+        if (targetPlatform)
+        {
+            targetPlatform.isAttached = false;
+        }
+        targetPlatform = null;
     }
 
     void handleCasting()
@@ -124,6 +133,12 @@ public class GrappleProjectile : MonoBehaviour {
             myDistanceJoint.connectedAnchor = new Vector2(0,0);
             // Move to that point
             transform.position = hit.point;
+            targetPlatform = hit.collider.gameObject.GetComponent<MovablePlatform>();
+            if(targetPlatform)
+            {
+                targetPlatform.isAttached = true;
+                offsetFromTarget = transform.position - hit.transform.position;
+            }
 
         }
         else
@@ -216,5 +231,13 @@ public class GrappleProjectile : MonoBehaviour {
             Hooked = false;
             resetHook();
         }
+    }
+
+    public void updateHookOnMove(Transform attachedTransform)
+    {
+        //attachedTransform.Translate(offsetFromTarget);
+        transform.position = new Vector3(attachedTransform.position.x + offsetFromTarget.x,
+                                            attachedTransform.position.y + offsetFromTarget.y,
+                                            attachedTransform.position.z);
     }
 }
