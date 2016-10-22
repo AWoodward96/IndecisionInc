@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AntigravityScript.cs" />
+     <Compile Include="Assets\Scripts\BoosterScript.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CheckpointScript.cs" />
      <Compile Include="Assets\Scripts\DeathMaker.cs" />
@@ -54,10 +56,15 @@
      <Compile Include="Assets\Scripts\EmitterController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GrappleProjectile.cs" />
+     <Compile Include="Assets\Scripts\HealthPickup.cs" />
+     <Compile Include="Assets\Scripts\InhibitorScript.cs" />
      <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\MovablePlatform.cs" />
      <Compile Include="Assets\Scripts\ObjectiveScript.cs" />
+     <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\PlayerRBController.cs" />
+     <Compile Include="Assets\Scripts\ProperTilingScript.cs" />
      <None Include="Assets\Sprites\platformIndustrial_sheet@2.xml" />
      <None Include="Assets\Sprites\Kenney Items\License.txt" />
      <None Include="Assets\Sprites\platformIndustrial_sheet.xml" />

@@ -243,6 +243,8 @@ MonoBehaviour:
   jumpForce: 1000
   jetpackSlider: {fileID: 0}
   jetpackCooldown: 0
+  jetpackFuel: 100
+  sliderColor: {fileID: 0}
   emitters:
   - {fileID: 198000012452609768}
   - {fileID: 198000013874115244}
@@ -250,6 +252,8 @@ MonoBehaviour:
   - {fileID: 198000011569295052}
   jetpackDuration: 0.1
   permaJetpack: 0
+  lockJetpack: 0
+  boostJetpack: 0
   GrapplingHookPrefab: {fileID: 159854, guid: e1c1ad8febb32124ba4ca2646f7b8140, type: 2}
   GM: {fileID: 0}
 --- !u!114 &114000012611099678
