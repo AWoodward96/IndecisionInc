@@ -53,6 +53,9 @@ public class PlayerRBController : MonoBehaviour
     public float jetpackDuration;
     public bool permaJetpack;
 
+    public bool lockJetpack;
+    public bool boostJetpack;
+
     // Just in case we need it
     public GameObject GrapplingHookPrefab;
     GrappleProjectile grapplingHook;
@@ -85,6 +88,9 @@ public class PlayerRBController : MonoBehaviour
             grapple = (GameObject)Instantiate(GrapplingHookPrefab, transform.position, Quaternion.identity);
             grapplingHook = grapple.GetComponent<GrappleProjectile>();
         }
+
+        lockJetpack = false;
+        boostJetpack = false;
     }
 
     // Update is called once per frame
@@ -131,20 +137,34 @@ public class PlayerRBController : MonoBehaviour
 
     void handleInput()
     {
-            if (Input.GetKeyDown(KeyCode.W) && jetpackCooldown >= 30)
+            if (Input.GetKeyDown(KeyCode.W) && jetpackCooldown >= 30 && !lockJetpack)
             {
                 setJetpackState(Constants.EMITTER_DOWN);
-                myRigidbody.AddForce(new Vector2(0, jumpForce));
+                if(!boostJetpack)
+                {
+                    myRigidbody.AddForce(new Vector2(0, jumpForce));
+                }
+                else
+                {
+                    myRigidbody.AddForce(new Vector2(0, jumpForce * 2));
+                }             
                 if (!permaJetpack)
                 {
                     jetpackCooldown -= 30;
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.A) && jetpackCooldown >= 30)
+            if (Input.GetKeyDown(KeyCode.A) && jetpackCooldown >= 30 && !lockJetpack)
             {
                 setJetpackState(Constants.EMITTER_RIGHT);
-                myRigidbody.AddForce(new Vector2(-jumpForce, 0));
+                if (!boostJetpack)
+                {
+                    myRigidbody.AddForce(new Vector2(-jumpForce, 0));
+                }
+                else
+                {
+                    myRigidbody.AddForce(new Vector2(-jumpForce * 2, 0));
+                }
                 if (!permaJetpack)
                 {
                     jetpackCooldown -= 30;
@@ -152,10 +172,17 @@ public class PlayerRBController : MonoBehaviour
             }
 
 
-            if (Input.GetKeyDown(KeyCode.S) && jetpackCooldown >= 30)
+            if (Input.GetKeyDown(KeyCode.S) && jetpackCooldown >= 30 && !lockJetpack)
             {
                 setJetpackState(Constants.EMITTER_UP);
-                myRigidbody.AddForce(new Vector2(0, -jumpForce));
+                if (!boostJetpack)
+                {
+                    myRigidbody.AddForce(new Vector2(0, -jumpForce));
+                }
+                else
+                {
+                    myRigidbody.AddForce(new Vector2(0, -jumpForce * 2));
+                }
                 if (!permaJetpack)
                 {
                     jetpackCooldown -= 30;
@@ -163,10 +190,17 @@ public class PlayerRBController : MonoBehaviour
             }
 
 
-            if (Input.GetKeyDown(KeyCode.D) && jetpackCooldown >= 30)
+            if (Input.GetKeyDown(KeyCode.D) && jetpackCooldown >= 30 && !lockJetpack)
             {
                 setJetpackState(Constants.EMITTER_LEFT);
-                myRigidbody.AddForce(new Vector2(jumpForce, 0));
+                if (!boostJetpack)
+                {
+                    myRigidbody.AddForce(new Vector2(jumpForce, 0));
+                }
+                else
+                {
+                    myRigidbody.AddForce(new Vector2(jumpForce * 2, 0));
+                }
                 if (!permaJetpack)
                 {
                     jetpackCooldown -= 30;
