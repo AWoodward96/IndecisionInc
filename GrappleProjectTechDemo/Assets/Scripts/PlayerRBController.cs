@@ -62,6 +62,7 @@ public class PlayerRBController : MonoBehaviour
 
     [HideInInspector]
     public GameManager GM;
+    public bool AcceptInput = true;
 
 
     // Use this for initialization
@@ -97,7 +98,10 @@ public class PlayerRBController : MonoBehaviour
     void Update()
     {
         Physics.gravity = new Vector3(0, gravity, 0);
-        handleInput();
+
+        grapplingHook.AcceptInput = AcceptInput;
+        if(AcceptInput)
+            handleInput();
 
         for (int i = 0; i < durations.Length; i++)
         {

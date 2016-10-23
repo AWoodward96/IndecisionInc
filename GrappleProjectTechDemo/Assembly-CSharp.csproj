@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\BoosterScript.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CheckpointScript.cs" />
+     <Compile Include="Assets\Scripts\ColorManager.cs" />
      <Compile Include="Assets\Scripts\DeathMaker.cs" />
      <Compile Include="Assets\Scripts\Deprecated\GrapplingHook.cs" />
      <Compile Include="Assets\Scripts\Deprecated\Object.cs" />
@@ -65,7 +66,10 @@
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\PlayerRBController.cs" />
      <Compile Include="Assets\Scripts\ProperTilingScript.cs" />
+     <Compile Include="Assets\Scripts\TimerManager.cs" />
      <None Include="Assets\Sprites\platformIndustrial_sheet@2.xml" />
+     <None Include="Assets\Sprites\License.txt" />
+     <None Include="Assets\Sprites\spritesheet_players.xml" />
      <None Include="Assets\Sprites\Kenney Items\License.txt" />
      <None Include="Assets\Sprites\platformIndustrial_sheet.xml" />
      <None Include="Assets\Plugins\Fonts\ReadMe.txt" />

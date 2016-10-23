@@ -12,6 +12,9 @@ public class GrappleProjectile : MonoBehaviour {
     public Vector3 Move; // the direction that the projectile moves
     public bool fired; // Has this been fired
     public bool Hooked; // Are we currently hanging
+
+    public bool AcceptInput;
+
     bool SpeedReel;
     MovablePlatform targetPlatform;
     Vector2 CursorWorldPosition;
@@ -45,9 +48,17 @@ public class GrappleProjectile : MonoBehaviour {
 	void Update () {
         if(playerObject)
         {
+            if(AcceptInput)
+            {
+                handleCursor();
+                handleInput();
+            }
+            else
+            {
+                fired = false;
+                Hooked = false;
+            }
 
-            handleCursor();
-            handleInput();
 
 
             // State: The projectile is fired and has yet to hit anything

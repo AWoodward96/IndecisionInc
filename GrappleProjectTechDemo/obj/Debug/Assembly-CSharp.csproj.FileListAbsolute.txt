@@ -40,3 +40,4 @@ C:\Users\Mystic\Desktop\Git\IndecisionInc\GrappleProjectTechDemo\Temp\bin\Debug\
 C:\Users\Mystic\Desktop\Git\IndecisionInc\GrappleProjectTechDemo\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\Mystic\Desktop\Git\IndecisionInc\GrappleProjectTechDemo\obj\Debug\Assembly-CSharp.dll
 C:\Users\Mystic\Desktop\Git\IndecisionInc\GrappleProjectTechDemo\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Mystic\Desktop\Git\IndecisionInc\GrappleProjectTechDemo\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

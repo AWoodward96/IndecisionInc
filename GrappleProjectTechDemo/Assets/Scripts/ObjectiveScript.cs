@@ -5,8 +5,12 @@ using System.Collections;
 public class ObjectiveScript : MonoBehaviour {
 
     BoxCollider2D myCollider;
-    public bool Activatable;
-    public bool WorldEnd;
+    public bool SimpleTransition; // If true, then we're just going to jump to the next level
+    public bool WorldEnd; // I'm not sure what this is for.
+
+    bool miniCutscene = false; // Are we running the mini cutscene? 
+    GameObject Player; // So we can move the player
+
 
     public GameManager GM;
 
@@ -24,38 +28,40 @@ public class ObjectiveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-        //obsolete
-        /*if(Activatable && Input.GetKeyDown(KeyCode.W))
+	    if(miniCutscene)
         {
-            if(!GM)
-            {
-                GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            }
-
-            GM.loadNextLevel();
-        }*/
+            Player.transform.position = Vector3.Lerp(Player.transform.position, this.transform.position, Vector3.Distance(Player.transform.position, this.transform.position) * Time.deltaTime);
+        }
 	}
 
     void OnTriggerEnter2D(Collider2D Col)
     {
         if(Col.tag == "Player")
         {
-            Activatable = true;
+ 
             if (!GM)
             {
                 GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             }
 
-            GM.loadNextLevel(WorldEnd);
+            if (SimpleTransition)
+                GM.loadNextLevel(WorldEnd);
+            else
+            {
+                miniCutscene = true;
+                Player = Col.transform.gameObject;
+                Player.GetComponent<PlayerRBController>().AcceptInput = false;
+                Player.GetComponent<Rigidbody2D>().isKinematic = true;
+                StartCoroutine(wait());
+            }
+
         }
     }
 
-    void OnTriggerExit2D(Collider2D Col)
+    IEnumerator wait()
     {
-        if(Col.tag == "Player")
-        {
-            Activatable = false;
-        }
+        yield return new WaitForSeconds(3);
+        GM.loadNextLevel(WorldEnd);
     }
+ 
 }

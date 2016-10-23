@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof(BoxCollider2D))]
 public class AntigravityScript : MonoBehaviour {
 
     BoxCollider2D myCollider;
