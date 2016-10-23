@@ -11,7 +11,10 @@ public class LaserScript : MonoBehaviour
     public bool state;
     //public Color prefireColor;
     //public Color fireColor;
-    public float toggleTime;
+    public float timeOff;
+    public float timeOn;
+    public float startOffset;
+    float waiting;
 
     LayerMask GroundMask;
     LayerMask PlayerMask;
@@ -26,34 +29,35 @@ public class LaserScript : MonoBehaviour
         GroundMask = LayerMask.GetMask("Ground");
         PlayerMask = LayerMask.GetMask("Player");
         myLineRenderer = GetComponent<LineRenderer>();
+        waiting = startOffset;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (!running)
         {
             running = true;
 
             StartCoroutine(waitTime());
-            StartCoroutine(waitTimeMinusOne());
+            if (!state)
+            {
+                StartCoroutine(waitTimeMinusOne());
+            }
         }
 
         myLineRenderer.enabled = (state || prefire);
         if(state)
         {
-
-            myLineRenderer.SetWidth(.6f, .6f);
+            myLineRenderer.SetWidth(.5f, .5f);
             //myLineRenderer.SetColors(fireColor, fireColor);
-
-
+            
             Ray2D r = new Ray2D(transform.position, Direction);
             myLineRenderer.SetPosition(0, transform.position);
             RaycastHit2D hit = Physics2D.Raycast(r.origin, r.direction, maxLength, GroundMask | PlayerMask);
             if (hit)
             {
-                Debug.Log(hit.point);
+                //Debug.Log(hit.point);
                 myLineRenderer.SetPosition(1, hit.point);
                 if(hit.transform.tag == "Player")
                 {
@@ -70,7 +74,6 @@ public class LaserScript : MonoBehaviour
 
         if(prefire)
         {
-            
             lerpedVal = Mathf.Lerp(lerpedVal, .1f, .1f);
             myLineRenderer.SetWidth(lerpedVal, lerpedVal);
             //myLineRenderer.SetColors(prefireColor, prefireColor);
@@ -87,20 +90,26 @@ public class LaserScript : MonoBehaviour
             {
                 myLineRenderer.SetPosition(1, (Vector2)transform.position + (Direction).normalized * maxLength);
             }
-
-
         }
     }
 
     IEnumerator waitTime()
     {
-        if (toggleTime == 0)
+        if (timeOff == 0 || timeOn == 0)
         {
             Debug.Log("Your wait time on " + gameObject + " is currently 0 or null. This isn't optimal.");
         }
         else
         {
-            yield return new WaitForSeconds(toggleTime);
+            yield return new WaitForSeconds(waiting);
+        }
+        if(state)
+        {
+            waiting = timeOff;
+        }
+        else
+        {
+            waiting = timeOn;
         }
         Debug.Log("Normal");
 
@@ -111,7 +120,7 @@ public class LaserScript : MonoBehaviour
 
     IEnumerator waitTimeMinusOne()
     {
-        float num = toggleTime - 1;
+        float num = waiting - 1;
         if (num < 0)
             yield break;
 

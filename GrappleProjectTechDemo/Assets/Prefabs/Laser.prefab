@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013268773324}
+  m_RootGameObject: {fileID: 1000012114354922}
   m_IsPrefabParent: 1
---- !u!1 &1000013268773324
+--- !u!1 &1000012114354922
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000011283543600}
-  - 212: {fileID: 212000013561028570}
-  - 114: {fileID: 114000010709507672}
-  - 120: {fileID: 120000012560644546}
+  - 4: {fileID: 4000012947110664}
+  - 212: {fileID: 212000010516786998}
+  - 114: {fileID: 114000013419062678}
+  - 120: {fileID: 120000012727299254}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -29,25 +29,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000011283543600
+--- !u!4 &4000012947110664
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013268773324}
+  m_GameObject: {fileID: 1000012114354922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.26, y: -8.34, z: 0}
+  m_LocalPosition: {x: -4.754471, y: 4.91, z: 0}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000010709507672
+--- !u!114 &114000013419062678
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013268773324}
+  m_GameObject: {fileID: 1000012114354922}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b8f679fd494cb45a3b98dfcdaac485, type: 3}
@@ -57,13 +57,13 @@ MonoBehaviour:
   Direction: {x: 1, y: 0}
   state: 0
   toggleTime: 10
---- !u!120 &120000012560644546
+--- !u!120 &120000012727299254
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013268773324}
-  m_Enabled: 1
+  m_GameObject: {fileID: 1000012114354922}
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -99,12 +99,12 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!212 &212000013561028570
+--- !u!212 &212000010516786998
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013268773324}
+  m_GameObject: {fileID: 1000012114354922}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
