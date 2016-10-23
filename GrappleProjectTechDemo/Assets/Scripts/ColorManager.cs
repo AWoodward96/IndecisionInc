@@ -14,10 +14,11 @@ public class ColorManager : MonoBehaviour {
     string colorSet2 = "exotic";
     string colorSet3 = "alternate";
     string colorSet4 = "darks";
+    string colorSet5 = "green";
 
     public enum Colorset
     {
-        Original, Exotic, Alternate, Dark
+        Original, Exotic, Alternate, Dark, Green
     }
 
     public Colorset currentColor;
@@ -40,6 +41,7 @@ public class ColorManager : MonoBehaviour {
         colorsets.Add((int)Colorset.Exotic, "exotic");
         colorsets.Add((int)Colorset.Alternate, "alternate");
         colorsets.Add((int)Colorset.Dark, "darks");
+        colorsets.Add((int)Colorset.Green, "green");
 
         setupScene(colorsets[(int)currentColor]);
     }
@@ -51,6 +53,7 @@ public class ColorManager : MonoBehaviour {
         KillableColor.Add(colorSet2, new Color32(127, 38, 38, 255));
         KillableColor.Add(colorSet3, new Color32(255, 76, 76, 255));
         KillableColor.Add(colorSet4, new Color32(127, 0, 0, 255));
+        KillableColor.Add(colorSet5, new Color32(7, 86, 15, 255));
 
     }
 
@@ -61,6 +64,8 @@ public class ColorManager : MonoBehaviour {
         GrabbableColor.Add(colorSet2, new Color32(38, 101, 127, 255));
         GrabbableColor.Add(colorSet3, new Color32(76, 203, 255, 255));
         GrabbableColor.Add(colorSet4, new Color32(153, 225, 255, 255));
+        GrabbableColor.Add(colorSet5, new Color32(78, 216, 175, 255));
+
     }
 
     void setupNonGrabbable()
@@ -70,6 +75,7 @@ public class ColorManager : MonoBehaviour {
         NonGrabbableColor.Add(colorSet2, new Color32(255, 222, 31, 255));
         NonGrabbableColor.Add(colorSet3, new Color32(127, 127, 54, 255));
         NonGrabbableColor.Add(colorSet4, new Color32(255, 233, 107, 255));
+        NonGrabbableColor.Add(colorSet5, new Color32(45, 183, 114, 255));
 
     }
 
@@ -80,6 +86,7 @@ public class ColorManager : MonoBehaviour {
         CheckpointColor.Add(colorSet2, new Color32(57, 127, 63, 255));
         CheckpointColor.Add(colorSet3, new Color32(51, 255, 0, 255));
         CheckpointColor.Add(colorSet4, new Color32(25, 127, 0, 255));
+        CheckpointColor.Add(colorSet5, new Color32(129, 232, 221, 255));
 
     }
 
