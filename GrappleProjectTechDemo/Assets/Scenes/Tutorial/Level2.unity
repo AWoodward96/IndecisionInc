@@ -851,6 +851,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012849815726, guid: b8f59ceac07a9e2438e1f49c90dce893,
+        type: 2}
+      propertyPath: nextScene
+      value: Scenes/Tutorial/Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
   m_IsPrefabParent: 0

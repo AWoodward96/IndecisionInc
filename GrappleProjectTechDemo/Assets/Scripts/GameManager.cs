@@ -28,8 +28,9 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	}
+	void Update ()
+    {
+    }
 
     // This is called every time unity loads a level
     // You don't need to call this from anywhere, Unity does it for us

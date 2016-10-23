@@ -1473,6 +1473,11 @@ Prefab:
       propertyPath: WorldEnd
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012849815726, guid: b8f59ceac07a9e2438e1f49c90dce893,
+        type: 2}
+      propertyPath: nextScene
+      value: LevelSelector
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
   m_IsPrefabParent: 0

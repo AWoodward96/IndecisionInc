@@ -561,7 +561,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012037897460, guid: 82f3082988b30424c908b124cbd7e168, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014120998266, guid: 82f3082988b30424c908b124cbd7e168,
+        type: 2}
+      propertyPath: nextScene
+      value: Scenes/World2/Level6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82f3082988b30424c908b124cbd7e168, type: 2}

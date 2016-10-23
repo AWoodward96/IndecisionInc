@@ -129,6 +129,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 212000011858777024, guid: b8f59ceac07a9e2438e1f49c90dce893,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012849815726, guid: b8f59ceac07a9e2438e1f49c90dce893,
+        type: 2}
+      propertyPath: nextScene
+      value: Scenes/World1/Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8f59ceac07a9e2438e1f49c90dce893, type: 2}
   m_IsPrefabParent: 0
@@ -671,6 +681,11 @@ Prefab:
     - target: {fileID: 477894, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010120357132, guid: e9c4360065e2df149aef1a18e4cb80a2,
+        type: 2}
+      propertyPath: currentColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
