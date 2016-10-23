@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     //public int nextSceneIndex;
 
     GameObject PlayerObject;
+    public GameObject UIPrefab;
     PlayerRBController PlayerScript;
 
 	// Since this object won't be destroyed (See the Object.DontDestroyOnLoad) this will only be called once
@@ -52,6 +53,8 @@ public class GameManager : MonoBehaviour {
         {
             PlayerStartPos = Vector3.zero;
         }
+
+        if (!GameObject.Find("UI")) GameObject.Instantiate(UIPrefab);
 
 
     }
@@ -123,5 +126,7 @@ public class GameManager : MonoBehaviour {
         grapplinghook.gameObject.SetActive(true);
         PlayerObject.SetActive(true);
         PlayerObject.transform.position = PlayerRespawnLoc;
+
+        GameObject.Find("UI").GetComponent<TimerManager>().resetLife();
     }
 }

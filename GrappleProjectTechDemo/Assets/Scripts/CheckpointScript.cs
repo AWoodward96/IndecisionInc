@@ -38,6 +38,7 @@ public class CheckpointScript : MonoBehaviour {
             Col.gameObject.GetComponent<PlayerRBController>().jetpackCooldown = 100;
             Debug.Log("CHECKPOINT!!!");
             SetActive();
+            GameObject.Find("UI").GetComponent<TimerManager>().resetCheckpoint();
         }
     }
 

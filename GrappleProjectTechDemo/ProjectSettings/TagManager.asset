@@ -12,6 +12,7 @@ TagManager:
   - Checkpoint
   - WorldScreen
   - Pickup
+  - Killable
   layers:
   - Default
   - TransparentFX
