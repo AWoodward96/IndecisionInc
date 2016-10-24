@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour {
         {
             PlayerStartPos = Vector3.zero;
         }
-
+       
         if (!GameObject.Find("UI(Clone)")) GameObject.Instantiate(UIPrefab);
 
 
@@ -73,11 +73,13 @@ public class GameManager : MonoBehaviour {
         if(SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             loadSpecificScene("LevelSelector");
+            GameObject.Destroy(GameObject.Find("UI(Clone)"));
             return;
         }
         if(toStart)
         {
             loadSpecificScene("LevelSelector");
+            GameObject.Destroy(GameObject.Find("UI(Clone)"));
             return;
         }
 
@@ -95,6 +97,7 @@ public class GameManager : MonoBehaviour {
     {
         // This is a lot less safe, but it's also a lot more convinient
         SceneManager.LoadScene(sceneName);
+        if(sceneName == "LevelSelector" || sceneName == "MainMenu" || sceneName == "Instructions") GameObject.Destroy(GameObject.Find("UI(Clone)"));
     }
 
     public void resetPlayer(GrappleProjectile proj)
