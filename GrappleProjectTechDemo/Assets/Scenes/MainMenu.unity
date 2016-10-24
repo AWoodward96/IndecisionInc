@@ -597,7 +597,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scenes/World1/Level1
+          m_StringArgument: Scenes/Tutorial/Level1
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -945,7 +945,7 @@ GameObject:
   - 222: {fileID: 1745752582}
   - 114: {fileID: 1745752581}
   m_Layer: 5
-  m_Name: Instructions
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -990,10 +990,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 15aeb0f566df36d469c408788177bd8b, type: 3}
-    m_FontSize: 61
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 107
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1001,7 +1001,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Jetpack Platformer Game Of Awesome
+  m_Text: Raycast Hero
 --- !u!222 &1745752582
 CanvasRenderer:
   m_ObjectHideFlags: 0
