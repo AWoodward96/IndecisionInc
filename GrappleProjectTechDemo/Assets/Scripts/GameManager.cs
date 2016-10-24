@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour {
             PlayerStartPos = Vector3.zero;
         }
 
-        if (!GameObject.Find("UI")) GameObject.Instantiate(UIPrefab);
+        if (!GameObject.Find("UI(Clone)")) GameObject.Instantiate(UIPrefab);
 
 
     }

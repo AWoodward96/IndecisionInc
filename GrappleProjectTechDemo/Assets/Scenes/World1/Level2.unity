@@ -1065,6 +1065,11 @@ Prefab:
       propertyPath: currentColor
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11415378, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
+      propertyPath: UIPrefab
+      value: 
+      objectReference: {fileID: 1000014100325870, guid: e2ab61c4f3eaec344bfcee88ca89632b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
   m_IsPrefabParent: 0
