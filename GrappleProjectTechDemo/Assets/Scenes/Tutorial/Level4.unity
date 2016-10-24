@@ -170,11 +170,9 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 310814738}
-  m_Text: 'E reels you towards your grapple hook
+  m_Text: 'E will reel your hook in, Q will reel out!
 
-    Q reels you away from it
-
-'
+    You can use the scroll wheel as well!'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -742,9 +740,9 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334863240}
-  m_Text: 'Spacebar reels you in quickly
+  m_Text: 'Spacebar quickly reels all the way in!
 
-    It is much faster, but you cannot stop
+    It''s fast, but harder to control!
 
 '
   m_OffsetZ: 0
@@ -1165,11 +1163,12 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2058980813}
-  m_Text: 'Think you are ready?
+  m_Text: 'Try using only your hook to cross the ledge
 
-    Try making it through the level without using your jetpack
+    and make it up the cliff!
 
-'
+
+    Beware: The Jetpack is disabled!'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

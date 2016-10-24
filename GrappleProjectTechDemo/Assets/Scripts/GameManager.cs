@@ -128,6 +128,6 @@ public class GameManager : MonoBehaviour {
         PlayerObject.SetActive(true);
         PlayerObject.transform.position = PlayerRespawnLoc;
 
-        GameObject.Find("UI").GetComponent<TimerManager>().resetLife();
+        GameObject.Find("UI(Clone)").GetComponent<TimerManager>().resetLife();
     }
 }

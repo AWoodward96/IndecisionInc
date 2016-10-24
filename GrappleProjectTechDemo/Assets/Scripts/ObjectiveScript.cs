@@ -70,7 +70,7 @@ public class ObjectiveScript : MonoBehaviour {
 
                     //slowly fades the block to nothing
                     Color col = Player.GetComponent<SpriteRenderer>().color;
-                    col.a -= .015f;
+                    col.a -= .050f;
                     Player.GetComponent<SpriteRenderer>().color = col;
                 }
                 //load next scene when the player disappears
@@ -123,7 +123,7 @@ public class ObjectiveScript : MonoBehaviour {
 
     IEnumerator wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
         if (nextScene == "")
         {
             GM.loadNextLevel(WorldEnd);
