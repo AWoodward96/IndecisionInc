@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         Object.DontDestroyOnLoad(this);
 
-
         GameObject otherGameManager = GameObject.FindGameObjectWithTag("GameManager");
         // Ensure there's only one instance of the game manager
         if(otherGameManager != this.gameObject)
@@ -127,7 +126,7 @@ public class GameManager : MonoBehaviour {
         grapplinghook.gameObject.SetActive(true);
         PlayerObject.SetActive(true);
         PlayerObject.transform.position = PlayerRespawnLoc;
-
-        GameObject.Find("UI").GetComponent<TimerManager>().resetLife();
+        
+        GameObject.FindGameObjectWithTag("Timer").GetComponent<TimerManager>().resetLife();
     }
 }

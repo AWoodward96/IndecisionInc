@@ -50,6 +50,7 @@ public class ObjectiveScript : MonoBehaviour {
                 Player.GetComponent<BoxCollider2D>().enabled = false;
                 GameObject.Find("GameplayUI").SetActive(false);
                 GameObject.Find("GrappleObject(Clone)").SetActive(false);
+                GameObject.FindGameObjectWithTag("Timer").GetComponent<TimerManager>().freeze = true;
             }
             if(teleportation)
             {
