@@ -13,6 +13,7 @@ TagManager:
   - WorldScreen
   - Pickup
   - Killable
+  - Timer
   layers:
   - Default
   - TransparentFX

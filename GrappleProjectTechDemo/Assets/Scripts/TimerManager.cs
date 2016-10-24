@@ -9,6 +9,7 @@ public class TimerManager : MonoBehaviour {
     private float levelTime;
     private float lifeTime;
     private float checkpointTime;
+    public bool freeze = false;
 
 	// Use this for initialization
 	void Start () {
@@ -21,9 +22,12 @@ public class TimerManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        levelTime      += Time.deltaTime;
-        lifeTime       += Time.deltaTime;
-        checkpointTime += Time.deltaTime;
+        if (!freeze)
+        {
+            levelTime += Time.deltaTime;
+            lifeTime += Time.deltaTime;
+            checkpointTime += Time.deltaTime;
+        }
 
         levelTimer.text = "Total: "  + levelTime.ToString("n2");
         lifeTimer.text = "Current: " + lifeTime.ToString("n2");
