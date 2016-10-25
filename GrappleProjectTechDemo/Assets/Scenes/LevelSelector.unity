@@ -716,7 +716,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Jetpak Basics 1
+  m_Text: Jetpack Basics 1
 --- !u!222 &112166969
 CanvasRenderer:
   m_ObjectHideFlags: 0
