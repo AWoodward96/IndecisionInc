@@ -453,7 +453,7 @@ Prefab:
     - target: {fileID: 114000010120357132, guid: e9c4360065e2df149aef1a18e4cb80a2,
         type: 2}
       propertyPath: currentColor
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11415378, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
       propertyPath: UIPrefab

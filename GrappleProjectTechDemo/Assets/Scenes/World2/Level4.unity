@@ -638,6 +638,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1000014100325870, guid: e2ab61c4f3eaec344bfcee88ca89632b,
         type: 2}
+    - target: {fileID: 114000010120357132, guid: e9c4360065e2df149aef1a18e4cb80a2,
+        type: 2}
+      propertyPath: currentColor
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9c4360065e2df149aef1a18e4cb80a2, type: 2}
   m_IsPrefabParent: 0
@@ -3123,7 +3128,7 @@ Transform:
   - {fileID: 345759544}
   - {fileID: 1504027121}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 17
 --- !u!1001 &1906838594
 Prefab:
   m_ObjectHideFlags: 0
