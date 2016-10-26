@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa99f44370e8e094cbb0e867a3036902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCanvas: {fileID: 0}
+  startCanvas: {fileID: 235986102}
 --- !u!4 &1085759159
 Transform:
   m_ObjectHideFlags: 0
